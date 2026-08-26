@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+*.so
+.ipynb_checkpoints/
+
+# Python/conda
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Logs and runtime state
+*.log
+wandb/
+runs/
+tmp/
+temp/
+
+# Large/generated data
+data/*.json
+data/*.jsonl
+!data/*.stats.json
+!data/dataset_info.json
+!data/README.md
+
+# Model and evaluation artifacts
+outputs/
+training_curves/
+checkpoints/
+saves/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Local machine config
+.env
+local_paths.sh

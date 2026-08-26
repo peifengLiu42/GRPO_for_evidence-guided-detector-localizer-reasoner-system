@@ -1,0 +1,32 @@
+{
+  "realtext_reference_sft_from_scratch_distmix_authdown_shortprompt": {
+    "file_name": "realtext_reference_sft_from_scratch_distmix_authdown_shortprompt.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  },
+  "realtext_reference_rft_from_sft5_distmix_authdown_shortprompt": {
+    "file_name": "realtext_reference_rft_from_sft5_distmix_authdown_shortprompt.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages",
+      "images": "images"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
+  }
+}

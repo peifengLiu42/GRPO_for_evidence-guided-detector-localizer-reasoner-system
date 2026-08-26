@@ -1,0 +1,45 @@
+{
+  "dataset_type": "realtext_reference_rft_from_sft5_distmix_authdown_shortprompt",
+  "rollout_files": [
+    "outputs/rft_sft5_rollouts/rollouts.part0.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.part1.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.part2.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.part3.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part0.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part1.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part2.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part3.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part4.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part5.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part6.jsonl",
+    "outputs/rft_sft5_rollouts/rollouts.resume8.part7.jsonl"
+  ],
+  "output": "<PROJECT_ROOT>/data/realtext_reference_rft_from_sft5_distmix_authdown_shortprompt.json",
+  "output_sha256": "633abe0fe3cb6977de46c6f6e6e8598a4c5674228855bfdd20c7843694f37ca2",
+  "num_rollout_prompts": 4096,
+  "num_rft_records": 4050,
+  "acceptance_rate": 0.98876953125,
+  "counts": {
+    "accepted": 4050,
+    "label_FORGED_accepted": 2413,
+    "rejected": 46,
+    "label_FORGED_rejected": 45,
+    "label_AUTHENTIC_accepted": 1637,
+    "label_AUTHENTIC_rejected": 1
+  },
+  "score_mean": 0.8091987587855213,
+  "selected_pixel_mean": {
+    "precision": 0.7145866601546187,
+    "recall": 0.804553077184379,
+    "f1": 0.7187162595552362,
+    "iou": 0.6369652513466878
+  },
+  "filters": {
+    "min_score": 0.4,
+    "min_forged_iou": 0.02,
+    "min_forged_precision": 0.05,
+    "max_forged_area_ratio": 0.35,
+    "max_authentic_boxes": 0
+  },
+  "metadata_removed_from_training_json": true
+}

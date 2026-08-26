@@ -1,0 +1,86 @@
+{
+  "dataset_type": "realtext_reference_sft_from_scratch_distmix_authdown_shortprompt",
+  "source": "<PROJECT_ROOT>/data/realtext_grpo_reference_evidence_train_shortprompt.json",
+  "source_sha256": "a456644751fc4432cb1ca8c7223eca9bce0020761dd9c05ac4b72655642f0643",
+  "output": "<PROJECT_ROOT>/data/realtext_reference_sft_from_scratch_distmix_authdown_shortprompt.json",
+  "output_sha256": "ae838d651dd3cebf030370b8b21ee8c8643e05fc15c85d1cc9339934e743a1fb",
+  "exclude_list": "<REALTEXTV2_ROOT>/train/test.txt",
+  "seed": 42,
+  "requested_samples": 7851,
+  "forged_fraction": 0.5869316,
+  "source_records": 12148,
+  "output_records": 7851,
+  "validation_overlap": 0,
+  "selection_policy": "Class targets are determined by num_samples and forged_fraction. Within each class, difficulty buckets follow the source distribution by largest remainder, with all detector-error or detector/DTD-conflict rows forced in.",
+  "metadata_removed_from_training_json": true,
+  "plan": {
+    "class_targets": {
+      "FORGED": 4608,
+      "AUTHENTIC": 3243
+    },
+    "bucket_targets": {
+      "FORGED": {
+        "forged_dtd_empty": 15,
+        "forged_iou_0.3_0.7": 1353,
+        "forged_iou_ge_0.7": 2807,
+        "forged_iou_lt_0.3": 433
+      },
+      "AUTHENTIC": {
+        "authentic_clean": 3000,
+        "authentic_dtd_fp": 243
+      }
+    }
+  },
+  "counts": {
+    "gt_label": {
+      "AUTHENTIC": 3243,
+      "FORGED": 4608
+    },
+    "difficulty_bucket": {
+      "authentic_clean": 3000,
+      "authentic_dtd_fp": 243,
+      "forged_dtd_empty": 15,
+      "forged_iou_0.3_0.7": 1353,
+      "forged_iou_ge_0.7": 2807,
+      "forged_iou_lt_0.3": 433
+    },
+    "localization_f1_bucket": {
+      "authentic_clean": 3000,
+      "authentic_dtd_fp": 243,
+      "forged_dtd_empty": 15,
+      "forged_f1_0.4_0.8": 1296,
+      "forged_f1_ge_0.8": 2972,
+      "forged_f1_lt_0.4": 325
+    },
+    "evidence_case": {
+      "gt_authentic__detector_authentic__dtd_empty": 2988,
+      "gt_authentic__detector_authentic__dtd_positive": 237,
+      "gt_authentic__detector_forged__dtd_empty": 12,
+      "gt_authentic__detector_forged__dtd_positive": 6,
+      "gt_forged__detector_authentic__dtd_positive": 48,
+      "gt_forged__detector_forged__dtd_empty": 15,
+      "gt_forged__detector_forged__dtd_positive": 4545
+    },
+    "recommended_sampling_weight": {
+      "1": 5788,
+      "2": 1338,
+      "4": 725
+    },
+    "detector_correct": {
+      "False": 66,
+      "True": 7785
+    }
+  },
+  "forged_iou_histogram": {
+    "[0.3,0.4)": 246,
+    "[0.7,0.8)": 611,
+    "[0.8,0.9)": 986,
+    "[0.9,1.0)": 1210,
+    "[0.2,0.3)": 204,
+    "[0.4,0.5)": 266,
+    "[0.0,0.1)": 95,
+    "[0.5,0.6)": 375,
+    "[0.6,0.7)": 466,
+    "[0.1,0.2)": 149
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "source": "data/realtext_grpo_reference_evidence_train_shortprompt.json",
+  "output": "data/realtext_grpo_reference_evidence_train_shortprompt_msswift_ultrahardmix3k_seed42.jsonl",
+  "sampling_mode": "ultra_hardmix",
+  "seed": 42,
+  "forged_fraction": 0.5,
+  "hardmix_bucket_fractions": {
+    "forged_iou_lt_0.3": 0.33,
+    "forged_iou_0.3_0.7": 0.28,
+    "forged_iou_ge_0.7": 0.05,
+    "forged_dtd_empty": 0.02,
+    "authentic_dtd_fp": 0.25,
+    "authentic_clean": 0.07
+  },
+  "source_stats": {
+    "records": 12148,
+    "counts": {
+      "difficulty/authentic_clean": 5157,
+      "difficulty/authentic_dtd_fp": 243,
+      "difficulty/forged_dtd_empty": 15,
+      "difficulty/forged_iou_0.3_0.7": 1984,
+      "difficulty/forged_iou_ge_0.7": 4113,
+      "difficulty/forged_iou_lt_0.3": 636,
+      "evidence_case/gt_authentic__detector_authentic__dtd_empty": 5145,
+      "evidence_case/gt_authentic__detector_authentic__dtd_positive": 237,
+      "evidence_case/gt_authentic__detector_forged__dtd_empty": 12,
+      "evidence_case/gt_authentic__detector_forged__dtd_positive": 6,
+      "evidence_case/gt_forged__detector_authentic__dtd_positive": 48,
+      "evidence_case/gt_forged__detector_forged__dtd_empty": 15,
+      "evidence_case/gt_forged__detector_forged__dtd_positive": 6685,
+      "label/authentic": 5400,
+      "label/forged": 6748,
+      "weight/1": 9251,
+      "weight/2": 1969,
+      "weight/4": 928
+    },
+    "class_weight_sums": {
+      "AUTHENTIC": 6165.0,
+      "FORGED": 10736.0
+    },
+    "unique_stems_by_bucket": {
+      "authentic_clean": 5157,
+      "authentic_dtd_fp": 243,
+      "forged_dtd_empty": 15,
+      "forged_iou_0.3_0.7": 1984,
+      "forged_iou_ge_0.7": 4113,
+      "forged_iou_lt_0.3": 636
+    }
+  },
+  "output_stats": {
+    "records": 3000,
+    "counts": {
+      "difficulty/authentic_clean": 210,
+      "difficulty/authentic_dtd_fp": 750,
+      "difficulty/forged_dtd_empty": 60,
+      "difficulty/forged_iou_0.3_0.7": 840,
+      "difficulty/forged_iou_ge_0.7": 150,
+      "difficulty/forged_iou_lt_0.3": 990,
+      "evidence_case/gt_authentic__detector_authentic__dtd_empty": 209,
+      "evidence_case/gt_authentic__detector_authentic__dtd_positive": 733,
+      "evidence_case/gt_authentic__detector_forged__dtd_empty": 1,
+      "evidence_case/gt_authentic__detector_forged__dtd_positive": 17,
+      "evidence_case/gt_forged__detector_authentic__dtd_positive": 55,
+      "evidence_case/gt_forged__detector_forged__dtd_empty": 60,
+      "evidence_case/gt_forged__detector_forged__dtd_positive": 1925,
+      "label/authentic": 960,
+      "label/forged": 2040,
+      "weight/1": 356,
+      "weight/2": 832,
+      "weight/4": 1812
+    },
+    "class_weight_sums": {
+      "AUTHENTIC": 3213.0,
+      "FORGED": 6055.0
+    },
+    "unique_stems_by_bucket": {
+      "authentic_clean": 205,
+      "authentic_dtd_fp": 236,
+      "forged_dtd_empty": 15,
+      "forged_iou_0.3_0.7": 680,
+      "forged_iou_ge_0.7": 147,
+      "forged_iou_lt_0.3": 501
+    }
+  }
+}

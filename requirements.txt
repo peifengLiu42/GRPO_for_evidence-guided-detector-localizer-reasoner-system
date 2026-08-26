@@ -1,0 +1,15 @@
+torch
+transformers
+peft
+ms-swift
+vllm
+llamafactory
+accelerate
+safetensors
+Pillow
+opencv-python
+numpy
+scipy
+tqdm
+matplotlib
+PyYAML
