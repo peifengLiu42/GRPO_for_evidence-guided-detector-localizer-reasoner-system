@@ -36,8 +36,6 @@
 | GRPO ckpt-1000 | 99.40 | 99.41 | 58.38 | 70.85 | 58.60 | 45.82 |
 | GRPO ckpt-1500 | 99.40 | 99.41 | 57.23 | 72.23 | 58.15 | 45.37 |
 
-其中 SFT 为同一评测脚本复算口径；原始记录中的 SFT official 结果为 image Bal-Acc 99.38、image Wtd-F1 99.41、pixel P 45.77、pixel R 73.95、pixel F1 49.92、pixel IoU 37.41。
-
 ## 奖励函数设计
 
 GRPO 奖励函数实现在 `src/realtext_grpo/msswift_reward_plugin.py` 和 `src/realtext_grpo/rewards.py`。论文公式化说明见 `docs/reward_design.md`。
